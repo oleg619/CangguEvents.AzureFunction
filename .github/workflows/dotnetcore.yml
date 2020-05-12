@@ -16,7 +16,7 @@ jobs:
     - name: 'Login via Azure CLI'
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}      
+        creds: ${{ secrets.SCM_CREDENTIALS }}      
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
